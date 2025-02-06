@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    background-color: #fffaf0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.black-text {
+    color: black;
+}
+
+.purple-text {
+    color: purple;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cat-image {
+    width: 300px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Wrapper for text and flower */
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Flower Image */
+.flower-image {
+    width: 150px;
+    margin-right: 10px; /* Space between flower and text */
+}
+
+/* Encoded Text */
+.encoded-text {
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Small Cat Icon */
+.small-cat {
+    width: 70px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Proposal</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            height: 80px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .love-img {
+            width: 300px;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            position: absolute;
+        }
+        .yes-btn {
+            background-color: #ff6b81;
+            color: white;
+            left: 50%;
+            transform: translateX(-120%);
+        }
+        .no-btn {
+            background-color: #b0b0b0;
+            color: white;
+            left: 60%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="./img/photo_2025-02-06_15-56-39.jpg" alt="Valentine" class="love-img">
+        <h2>Will You Be My Valentine?</h2>
+        <div class="buttons">
+            <button class="btn yes-btn" id="yesBtn">Yes</button>
+            <button class="btn no-btn" id="noBtn">No</button>
+        </div>
+    </div>
+
+    <script>
+        let noBtn = document.getElementById("noBtn");
+        let yesBtn = document.getElementById("yesBtn");
+
+        // Make "No" button move when hovered
+        noBtn.addEventListener("mouseover", function() {
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 100);
+            noBtn.style.position = "absolute";
+            noBtn.style.left = x + "px";
+            noBtn.style.top = y + "px";
+        });
+
+        // Redirect when "Yes" is clicked
+        yesBtn.addEventListener("click", function() {
+            window.location.href = "page1.html"; // Change to your actual page URL
+        });
+    </script>
+
+</body>
+</html>
